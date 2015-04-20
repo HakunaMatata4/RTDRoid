@@ -32,16 +32,4 @@ public class AlarmManager {
 	    int priority = RealTimeHelper.getInstance().FijiFIFO2RTSJ(RealtimeThread.currentRealtimeThread().getPriority());
 	    schedulingThread.setAlarm(timestamp, priority, operation);
     }
-    
-    public void setRepeatIng(int type, long triggerAtmMillis,
-            long intervalMills, PendingIntent operation) {
-    	// alarm.type = type;
-        //alarm.repeatInterval = intervalMills;
-        //alarm.isRepeatable = true;
-        int pr = RealTimeHelper.getInstance().FijiFIFO2RTSJ(
-                RealtimeThread.currentRealtimeThread().getPriority());
-        
-        //schedulingThread.setAlarm(timestamp, priority, operation);
-
-    }
 }
